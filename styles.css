@@ -111,9 +111,9 @@ dd {
 	padding-bottom: 20px;
   }
 
-/* Media query for tablet viewport targets screen size with a minimum width of 481px. */
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 660px) {
 
 
 /* Style specifies a horizontal display for navigation links */
@@ -125,6 +125,7 @@ nav li {
 	padding-left: 0;
 	padding-right: 0;
 	width: 18%;
+	white-space: nowrap;
  }
 
 /* Style specifies clear and top margin properties for the main element */
@@ -144,7 +145,7 @@ main {
  }
 
 /* Style specifies a display, float, and padding for the equip class */
-equip {
+.equip {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
@@ -169,9 +170,9 @@ dt {
  }
  }
 
-/* Media query for desktop viewport for desktop viewport targets screens with a minimum width of 769px. */
+/* Media query for desktop viewport for desktop viewport targets screens with a minimum width of 830px. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 830px) {
 
 /* Style specifies a width for container */ 
 #container {
@@ -202,6 +203,20 @@ nav li a {
 	padding: 0.7em;
  }
 
+/* Style rules for pseudo-classes*/
+nav li a: link {
+	color: #FFFFFF;
+}
+
+nav li a: visited {
+	color: #FFFF99;
+}
+
+nav li a:hover {
+	color: #FFFF00
+	font-style: italic;
+}
+
 /* Style specifies border, box shadow, and margins for the main element */
 main {
 	border-style: none; 
@@ -209,6 +224,15 @@ main {
 	margin-bottom: 1em;
 	margin-top: 1em;
  }
+
+/* Style specifies a gradient for the body element */
+body {
+	background: -moz-linear-gradient (#FFFF99); /*Firefox */
+	background: -o-linear-gradient (#FFFFFF, #FFFF99); /* Opera */
+	background: -webkit-linear-gradient (#FFFFFF, #FFFF99); /* Chrome, Safari */
+	background: linear-gradient (#FFFFFF, #FFFF99);
+	background-attachment: fixed
+}
 
 /* Style specifies left and right padding for paragraph elements within the main element */
 main p {
